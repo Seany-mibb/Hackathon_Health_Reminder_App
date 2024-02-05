@@ -1,17 +1,43 @@
 .header{
-  padding: 60px;
   text-align: center;
   background-color: rgb(190, 236, 201);
   color: rgb(84, 84, 84);
   font-size: 40px;
+  margin: -50px;
+}
+
+#notificationButton{
+  font-size: 30px;
+  scale: 1.5;
+}
+
+#notificationLabel{
+  font-size: 30px;
+  margin-right: 40px;
+}
+
+#disableNotificationLabel{
+  font-size: 30px;
+}
+
+#disableNotificationButton{
+  font-size: 30px;
+  scale: 1.5;
+}
+
+section{
+  display: inline-block;
+  margin: 0 1.5%;
 }
 
 body{
   font-family: 'Courier Prime', monospace;
+  overflow: hidden;
 }
 
 .image-container{
-  text-align: right;
+  text-align: left;
+  margin-right: 100px;
 }
 
 .checklist{
@@ -33,7 +59,6 @@ input.largerCheckBox{
 .modal-dialog{
     width: 90%;
 }
-
          
 .btn-grad1 {
     align-self: center;
@@ -60,7 +85,7 @@ input.largerCheckBox{
   .btn-grad2 {
     background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
     margin: 10px;
-    padding: 15px 30px;
+    padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -123,7 +148,6 @@ input.largerCheckBox{
 
   .sidenav{
     height: 100%;
-    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -154,3 +178,29 @@ input.largerCheckBox{
     font-size: 55px;
     margin-left: 50px;
   }
+
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checklist {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 900px;
+  text-align: center;
+  margin-top: px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container p{
+  font-size: 35px;
+}
